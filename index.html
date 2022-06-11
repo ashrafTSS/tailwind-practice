@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--stylesheet link-->
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!---tailwind css element link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--flowbite tailwind css link-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css"
+    />
+
+    <!--slick carousel link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+  </head>
+  <body>
+    <!---topbar section-->
+    <div class="">
+      <div
+        class="text-sm text-center py-4 text-gray-500 md:text-base md:px-4 md:py-5 md:flex md:justify-between lg:px-24"
+      >
+        <h1
+          class="lg:font-thin lg:text-sm lg:font-normal md:text-sm md:font-normal text-[#666666]"
+        >
+          Welcome to Applay
+        </h1>
+      </div>
+      <div
+        class="flex justify-center space-x-5 fill-[#777] md:flex md:justify-end md:px-4 md:-mt-10 lg:px-28 pb-5 md:pb-0 lg:pb-0"
+      >
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            class="w-4 h-6 lg:w-3.5 lg:h-3.5 md:w-3.5 md:h-3.5"
+            shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision"
+            image-rendering="optimizeQuality"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            viewBox="0 0 640 640"
+          >
+            <path
+              d="M380.001 120.001h99.993V0h-99.993c-77.186 0-139.986 62.8-139.986 139.986v60h-80.009V320h79.985v320h120.013V320h99.994l19.996-120.013h-119.99v-60.001c0-10.843 9.154-19.996 19.996-19.996v.012z"
+            />
+          </svg>
+        </div>
+
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            class="w-4 h-6 lg:w-3.5 lg:h-3.5 md:w-3.5 md:h-3.5"
+            shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision"
+            image-rendering="optimizeQuality"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            viewBox="0 0 640 640"
+          >
+            <path
+              d="M579.999 0H60C27 0 0 27 0 60v520c0 33 27 60 60 60h519.999c33 0 60-27 60-60V60c0-33-27-60-60-60zM239.991 519.999h-79.985V239.992h79.985v280.007zm-40.004-320.012c-22.11 0-39.993-17.882-39.993-39.993 0-22.122 17.882-40.004 39.993-40.004 22.122 0 40.004 17.882 40.004 40.004 0 22.11-17.882 39.993-40.004 39.993zm320.012 320.012h-79.986V360.005c0-22.122-17.893-40.004-40.004-40.004-22.122 0-40.004 17.882-40.004 40.004v159.994h-80.01V239.992h80.01v49.642c16.476-22.654 41.752-49.642 69.993-49.642 49.76 0 90 44.764 90 100.005v180.002z"
+            />
+          </svg>
+        </div>
+
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            class="w-4 h-6 lg:w-3.5 lg:h-3.5 md:w-3.5 md:h-3.5"
+            shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision"
+            image-rendering="optimizeQuality"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            viewBox="0 0 640 640"
+          >
+            <path
+              d="M319.965.024C143.246.024 0 143.282 0 320c0 135.628 84.39 251.33 203.412 297.913-2.728-25.24-5.362-64.206 1.146-91.773 5.775-24.969 37.536-158.99 37.536-158.99s-9.508-19.217-9.508-47.47c0-44.456 25.807-77.74 57.839-77.74 27.284 0 40.536 20.492 40.536 45.012 0 27.426-17.457 68.505-26.54 106.454-7.665 31.89 15.874 57.84 47.316 57.84 56.835 0 100.56-60.025 100.56-146.589 0-76.571-55.123-130.147-133.608-130.147-91.04 0-144.403 68.245-144.403 138.911 0 27.568 10.523 56.966 23.823 72.993 2.575 3.19 3.047 5.906 2.161 9.225-2.445 10.098-7.807 31.902-8.953 36.331-1.429 5.917-4.618 7.063-10.665 4.347-39.97-18.603-64.903-77.057-64.903-123.911 0-101.01 73.265-193.62 211.35-193.62 110.941 0 197.222 79.04 197.222 184.798 0 110.234-69.532 199.1-166.053 199.1-32.457 0-62.882-16.89-73.323-36.791 0 0-16.016 61.028-19.89 76.04-7.205 27.827-26.682 62.6-39.804 83.836 30.012 9.236 61.713 14.268 94.785 14.268C496.755 640.037 640 496.79 640 320.072 640 143.212 496.755-.034 320.036-.034l-.071.059z"
+            />
+          </svg>
+        </div>
+
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            class="w-4 h-6 lg:w-3.5 lg:h-3.5 md:w-3.5 md:h-3.5"
+            shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision"
+            image-rendering="optimizeQuality"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            viewBox="0 0 640 640"
+          >
+            <path
+              d="M640.012 121.513c-23.528 10.524-48.875 17.516-75.343 20.634 27.118-16.24 47.858-41.977 57.756-72.615-25.347 14.988-53.516 25.985-83.363 31.866-24-25.5-58.087-41.35-95.848-41.35-72.508 0-131.21 58.736-131.21 131.198 0 10.228 1.134 20.232 3.355 29.882-109.1-5.528-205.821-57.757-270.57-137.222a131.423 131.423 0 0 0-17.764 66c0 45.497 23.102 85.738 58.347 109.207-21.508-.638-41.74-6.638-59.505-16.359v1.642c0 63.627 45.225 116.718 105.32 128.718-11.008 2.988-22.63 4.642-34.606 4.642-8.48 0-16.654-.874-24.78-2.35 16.783 52.11 65.233 90.095 122.612 91.205-44.989 35.245-101.493 56.233-163.09 56.233-10.63 0-20.988-.65-31.334-1.89 58.229 37.359 127.206 58.997 201.31 58.997 241.42 0 373.552-200.069 373.552-373.54 0-5.764-.13-11.35-.366-16.996 25.642-18.343 47.87-41.493 65.469-67.844l.059-.059z"
+            />
+          </svg>
+        </div>
+
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            class="w-4 h-6 lg:w-3.5 lg:h-3.5 md:w-3.5 md:h-3.5"
+            shape-rendering="geometricPrecision"
+            text-rendering="geometricPrecision"
+            image-rendering="optimizeQuality"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            viewBox="0 0 640 640"
+          >
+            <path
+              d="M639.764 171.144c-2.894 62.257-46.383 147.675-130.537 255.901-87.025 113.021-160.667 169.679-220.916 169.679-37.229 0-68.87-34.37-94.643-103.265-17.232-63.13-34.37-126.261-51.65-189.368-19.122-68.894-39.65-103.265-61.643-103.265-4.771 0-21.52 10.122-50.244 30.119L0 192.18a7751.179 7751.179 0 0 0 93.378-83.257c42.12-36.366 73.773-55.489 94.891-57.532 49.76-4.76 80.54 29.245 91.998 102.143 12.366 78.65 21 127.537 25.89 146.671 14.362 65.233 30.118 97.88 47.374 97.88 13.359 0 33.52-21.13 60.379-63.545 26.752-42.236 41.127-74.481 43.123-96.639 3.885-36.484-10.489-54.886-43.123-54.886-15.366 0-31.122 3.52-47.375 10.524 31.477-103.017 91.49-153.014 180.262-150.144 65.659 1.748 96.651 44.362 92.907 127.785l.06-.036z"
+            />
+          </svg>
+        </div>
+      </div>
+      <hr class="hidden md:block md:mt-4 lg:mt-4 lg:block" />
+    </div>
+    <!---end topbar section-->
+
+    <!--sticky number-->
+    <div class="fixed top-[210px] right-[0px] flex justify-end z-10">
+      <div
+        class="w-12 bg-white py-3 px-3 shadow-lg group rounded-l-md hover:w-40 duration-500 cursor-pointer"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 animate-spin group-hover:animate-none fill-slate-700"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- end sticky number-->
+
+    <!--- main navbar-->
+    <nav
+      class="p-5 bg-[#333333] md:bg-white lg:bg-white md:flex md:items-center  md:justify-between md:sticky md:top-0 md:z-50 md:shadow-lg lg:sticky lg:top-0 lg:z-50 lg:shadow-lg"
+    >
+      <div class="flex justify-between items-center lg:mx-20">
+        <img class="h-8" src="./assets/img/logo (1).png" />
+        <span class="text-3xl cursor-pointer mx-0.5 md:hidden block">
+          <ion-icon
+            name="menu"
+            class="text-white"
+            onclick="Menu(this)"
+          ></ion-icon>
+        </span>
+      </div>
+
+      <ul
+        class="md:mx-6 md:flex md:items-center z-[-1] md:z-auto md:space-x-2 lg:space-x-4 md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 md:mr-auto lg:mr-auto"
+      >
+        <li
+          class="px-2.5 py-1.5 md:my-0 relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"
+        >
+          <span
+            class="w-0 rounded bg-[#006DFE] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"
+          ></span>
+          <a
+            href="#"
+            class="text-sm lg:font-normal text-[#666] transition-colors duration-300 ease-in-out group-hover:text-white z-10"
+            >Home</a
+          >
+        </li>
+        <li
+          class="px-2.5 py-1.5 md:my-0 relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"
+        >
+          <span
+            class="w-0 rounded bg-[#006DFE] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"
+          ></span>
+          <a
+            href="#"
+            class="text-sm lg:font-normal text-[#666] transition-colors duration-300 ease-in-out group-hover:text-white z-10"
+            >About Us</a
+          >
+        </li>
+        <li
+          class="px-2.5 py-1.5 md:my-0 relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"
+        >
+          <span
+            class="w-0 rounded bg-[#006DFE] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"
+          ></span>
+          <a
+            href="#"
+            class="text-sm lg:font-normal text-[#666] transition-colors duration-300 ease-in-out group-hover:text-white z-10"
+            >Features</a
+          >
+        </li>
+        <li
+          class="px-2.5 py-1.5 md:my-0 relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"
+        >
+          <span
+            class="w-0 rounded bg-[#006DFE] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"
+          ></span>
+          <a
+            href="#"
+            class="text-sm lg:font-normal text-[#666] transition-colors duration-300 ease-in-out group-hover:text-white z-10"
+            >Pricing</a
+          >
+        </li>
+        <li
+          class="px-2.5 py-1.5 md:my-0 relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"
+        >
+          <span
+            class="w-0 rounded bg-[#006DFE] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"
+          ></span>
+          <a
+            href="#"
+            class="text-sm lg:font-normal text-[#666] transition-colors duration-300 ease-in-out group-hover:text-white z-10"
+            >Faq</a
+          >
+        </li>
+        <li
+          class="px-2.5 py-1.5 md:my-0 relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"
+        >
+          <span
+            class="w-0 rounded bg-[#006DFE] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"
+          ></span>
+          <a
+            href="#"
+            class="text-sm lg:font-normal text-[#666] transition-colors duration-300 ease-in-out group-hover:text-white z-10"
+            >Blog</a
+          >
+        </li>
+        <li
+          class="px-2.5 py-1.5 md:my-0 relative inline-flex items-center justify-start overflow-hidden transition-all bg-white rounded hover:bg-white group"
+        >
+          <span
+            class="w-0 rounded bg-[#006DFE] absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"
+          ></span>
+          <a
+            href="#"
+            class="text-sm lg:font-normal text-[#666] transition-colors duration-300 ease-in-out group-hover:text-white z-10"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+      <button
+        class="hidden md:block lg:block bg-blue-100 text-blue-600 font-[Poppins] duration-500 md:mx-0 md:px-5 lg:px-10 py-2 mx-4 hover:bg-[#006DFE] hover:text-white rounded lg:mr-20 md:mr-0.5"
+      >
+        Get started
+      </button>
+    </nav>
+    <!---end main navbar-->
+    <!--navbar toggle script-->
+
+    <!--banner page-->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 min-h-[630px]">
+      <div class="lg:grid lg:grid-cols-2">
+        <div class="lg:pt-24">
+          <h4
+            class="text-center pt-20 text-white font-thin lg:text-left lg:px-28"
+          >
+            plan your Wife
+          </h4>
+          <h1
+            class="text-white text-center text-4xl font-thin md:py-3 md:text-4xl md:font-normal lg:text-left lg:px-28 lg:text-5xl lg:font-normal"
+          >
+            Increase your productivity
+          </h1>
+          <p
+            class="text-white text-center px-6 py-6 font-thin md:px-20 lg:text-left lg:px-28"
+          >
+            Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
+            atqui laudem an, insolens gubergren similique est cu. Et vel modus
+            congue vituperata.
+          </p>
+          <div
+            class="flex grid mx-10 gap-y-4 md:flex md:justify-center md:space-x-4 lg:justify-start lg:mx-28"
+          >
+            <a
+              href="#"
+              class="bg-white px-20 py-2 text-indigo-500 rounded md:px-8"
+              >view video</a
+            >
+            <a
+              href="#"
+              class="text-white capitalize border border-white px-24 py-2 rounded hover:bg-white hover:text-indigo-500 md:px-6"
+              >get start</a
+            >
+          </div>
+        </div>
+        <div class="lg:mt-24">
+          <img src="./assets/img/hero-image.svg" alt="hero-image" />
+        </div>
+      </div>
+    </section>
+    <!--end banner page-->
+
+    <!--technology carosel-->
+    <section>
+      <div class="lg:mx-36 my-14 mx-28">
+        <ul class="flex justify-between slider">
+          <li>
+            <img src="./assets/img/01.png" alt="image-1" class="w-[105px]" />
+          </li>
+          <li>
+            <img src="./assets/img/02.png" alt="image-2" class="w-[105px]" />
+          </li>
+          <li>
+            <img src="./assets/img/03.png" alt="image-3" class="w-[105px]" />
+          </li>
+          <li>
+            <img src="./assets/img/04.png" alt="image-4" class="w-[105px]" />
+          </li>
+          <li>
+            <img src="./assets/img/05.png" alt="image-5" class="w-[105px]" />
+          </li>
+          <li>
+            <img src="./assets/img/05.png" alt="image-5" class="w-[105px]" />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--end technology carosel-->
+    <!--about our app-->
+    <section class="bg-[#F5F8FF] pb-20">
+      <div>
+        <h1
+          class="text-center pt-20 text-2xl text-slate-600 font-normal lg:text-4xl"
+        >
+          Read About Our App
+        </h1>
+        <div
+          class="w-[12%] lg:w-[4%] m-auto my-4 border-t border-[thin] border-[#006DFE] md:w-[6%]"
+        ></div>
+        <p
+          class="text-center px-4 text-sm text-gray-400 lg:py-3 lg:text-base lg:px-72 md:px-32"
+        >
+          Continually network virtual strategic theme areas vis-a-vis ubiquitous
+          potentialities. Holisticly negotiate focused e-tailers without premium
+          solutions.
+        </p>
+      </div>
+
+      <div>
+        <div
+          class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8 md:gap-8 lg:mx-20 md:mx-4 mx-4"
+        >
+          <div
+            class="bg-white rounded group overflow-hidden shadow-lg w-[100%] md:w-[100%] lg:w-[98%] shadow-white-900 pb-5"
+          >
+            <div
+              class="absolute py-2 px-4 left-[12%] md:left-[6%] lg:left-[8%] bg-blue-100 p-2.5 rounded-sm group-hover:bg-[#006DFE] mt-8"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-6 text-blue-600 group-hover:text-white"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                />
+              </svg>
+            </div>
+
+            <h1 class="px-9 pt-28 capitalize px-8 text-gray-500">overview</h1>
+            <p class="px-9 py-4 text-gray-500">
+              Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
+              vulputate.
+            </p>
+          </div>
+          <!--1st card-->
+
+          <div
+            class="bg-white rounded group overflow-hidden shadow-lg w-[100%] md:w-[100%] lg-w-[92%] shadow-white-900 pb-5"
+          >
+            <div
+              class="absolute py-2 px-4 left-[12%] md:left-[56%] lg:left-[31%] bg-blue-100 p-2.5 rounded-sm group-hover:bg-[#006DFE] mt-8"
+            >
+              <svg
+                version="1.1"
+                class="h-10 w-6 fill-blue-500 font-semibold group-hover:fill-white"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 95.21"
+                style="enable-background: new 0 0 122.88 95.21"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M2.48,20.74h4.5v-9.86c0-1.37,1.11-2.48,2.48-2.48h4.41V2.48c0-1.37,1.11-2.48,2.48-2.48h40.26c1.37,0,2.48,1.11,2.48,2.48 V8.4h54.3c1.37,0,2.48,1.11,2.48,2.48v9.86h4.53c1.37,0,2.48,1.11,2.48,2.48c0,0.18-0.02,0.36-0.06,0.52l-8.68,63.81 c-0.28,2.08-1.19,4.01-2.59,5.41c-1.38,1.38-3.21,2.24-5.36,2.24H14.7c-2.16,0-4.03-0.87-5.43-2.26c-1.41-1.41-2.31-3.35-2.54-5.46 l-6.72-64c-0.14-1.36,0.85-2.58,2.21-2.72C2.31,20.75,2.39,20.75,2.48,20.74L2.48,20.74L2.48,20.74z M9.46,25.71H5.23l6.43,61.27 c0.1,0.98,0.5,1.85,1.1,2.46c0.5,0.5,1.17,0.81,1.93,0.81h91.5c0.75,0,1.38-0.3,1.87-0.79c0.62-0.62,1.03-1.53,1.17-2.55 l8.32-61.19H9.46L9.46,25.71z M11.94,13.37v7.36l98.97-1.05v-6.31h-54.3c-1.37,0-2.48-1.11-2.48-2.48V4.97h-35.3v5.92 c0,1.37-1.11,2.48-2.48,2.48H11.94L11.94,13.37z"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <h1 class="px-9 pt-28 capitalize px-8 text-gray-500">Files</h1>
+            <p class="px-9 py-4 text-gray-500">
+              Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
+              vulputate.
+            </p>
+          </div>
+          <!--2st card-->
+
+          <div
+            class="bg-white rounded group overflow-hidden shadow-lg w-[100%] md:w-[100%] lg-w-[92%] shadow-white-900 pb-5"
+          >
+            <div
+              class="absolute py-2 px-4 left-[12%] md:left-[6%] lg:left-[54%] bg-blue-100 p-2.5 rounded-sm group-hover:bg-[#006DFE] mt-8"
+            >
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 122.88 108.25"
+                class="h-10 w-6 fill-blue-600 group-hover:fill-white"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill-rule: evenodd;
+                    }
+                  </style>
+                </defs>
+                <title>chat-bubble</title>
+                <path
+                  class="cls-1"
+                  d="M51.16,93.74c13,12.49,31.27,16.27,49.59,8.46l15.37,6L111,96.13c17.08-13.68,14-32.48,1.44-45.3a44.38,44.38,0,0,1-4.88,13.92A51.45,51.45,0,0,1,93.45,80.84a62.51,62.51,0,0,1-19.73,10,71.07,71.07,0,0,1-22.56,2.92ZM74.74,36.13a6.68,6.68,0,1,1-6.68,6.68,6.68,6.68,0,0,1,6.68-6.68Zm-44.15,0a6.68,6.68,0,1,1-6.68,6.68,6.68,6.68,0,0,1,6.68-6.68Zm22.08,0A6.68,6.68,0,1,1,46,42.81a6.68,6.68,0,0,1,6.68-6.68ZM54,0H54c14.42.44,27.35,5.56,36.6,13.49,9.41,8.07,15,19,14.7,31v0c-.36,12-6.66,22.61-16.55,30.11C79,82.05,65.8,86.4,51.38,86a64.68,64.68,0,0,1-11.67-1.4,61,61,0,0,1-10-3.07L7.15,90.37l7.54-17.92A43.85,43.85,0,0,1,4,59,36.2,36.2,0,0,1,0,41.46c.36-12,6.66-22.61,16.55-30.12C26.3,4,39.53-.4,54,0ZM53.86,5.2h0C40.59,4.82,28.52,8.77,19.69,15.46,11,22,5.5,31.28,5.19,41.6A31.2,31.2,0,0,0,8.61,56.67a39.31,39.31,0,0,0,10.81,13L21,70.87,16.68,81.05l13.08-5.14,1,.42a55.59,55.59,0,0,0,10.05,3.18A59,59,0,0,0,51.52,80.8c13.22.39,25.29-3.56,34.12-10.26C94.31,64,99.83,54.73,100.15,44.4v0c.3-10.32-4.65-19.85-12.9-26.92C78.85,10.26,67.06,5.6,53.87,5.2Z"
+                />
+              </svg>
+            </div>
+
+            <h1 class="px-9 pt-28 capitalize px-8 text-gray-500">
+              Meeting chats
+            </h1>
+            <p class="px-9 py-4 text-gray-500">
+              Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
+              vulputate.
+            </p>
+          </div>
+          <!--3st card-->
+
+          <div
+            class="bg-white rounded group overflow-hidden shadow-lg w-[100%] md:w-[100%] lg-w-[92%] shadow-white-900 pb-5"
+          >
+            <div
+              class="absolute py-2 px-4 left-[12%] md:left-[56%] lg:left-[76%] bg-blue-100 p-2.5 rounded-sm group-hover:bg-[#006DFE] mt-8"
+            >
+              <svg
+                version="1.1"
+                id="Layer_1"
+                class="h-10 w-6 fill-blue-600 group-hover:fill-white"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 88.36"
+                style="enable-background: new 0 0 122.88 88.36"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M58.29,42.08V3.12C58.29,1.4,59.7,0,61.44,0s3.15,1.4,3.15,3.12v38.96L79.1,29.4c1.3-1.14,3.28-1.02,4.43,0.27 s1.03,3.25-0.27,4.39L63.52,51.3c-1.21,1.06-3.01,1.03-4.18-0.02L39.62,34.06c-1.3-1.14-1.42-3.1-0.27-4.39 c1.15-1.28,3.13-1.4,4.43-0.27L58.29,42.08L58.29,42.08L58.29,42.08z M0.09,47.43c-0.43-1.77,0.66-3.55,2.43-3.98 c1.77-0.43,3.55,0.66,3.98,2.43c1.03,4.26,1.76,7.93,2.43,11.3c3.17,15.99,4.87,24.57,27.15,24.57h52.55 c20.82,0,22.51-9.07,25.32-24.09c0.67-3.6,1.4-7.5,2.44-11.78c0.43-1.77,2.21-2.86,3.98-2.43c1.77,0.43,2.85,2.21,2.43,3.98 c-0.98,4.02-1.7,7.88-2.36,11.45c-3.44,18.38-5.51,29.48-31.8,29.48H36.07C8.37,88.36,6.3,77.92,2.44,58.45 C1.71,54.77,0.98,51.08,0.09,47.43L0.09,47.43z"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <h1 class="px-9 pt-28 capitalize px-8 text-gray-500">
+              Save events
+            </h1>
+            <p class="px-9 py-4 text-gray-500">
+              Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
+              vulputate.
+            </p>
+          </div>
+          <!--4st card-->
+        </div>
+      </div>
+    </section>
+    <!-- end about our app-->
+
+    <!--plan section-->
+    <section>
+      <div class="lg:grid lg:grid-cols-2 lg:mx-24 lg:mt-24">
+        <div class="">
+          <img
+            src="./assets/img/service-img1.svg"
+            alt="service-img1"
+            class=" "
+          />
+        </div>
+        <div>
+          <h4 class="text-blue-500 text-base font-thin px-6 pt-10">
+            Desktop and Mobile App
+          </h4>
+          <h1 class="text-[30px] font-medium px-6 py-5 text-[#444444]">
+            Plan and Manage
+          </h1>
+          <p class="px-6 text-[#666666]">
+            Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
+            atqui laudem an, insolens gubergren similique est cu. Et vel modus
+            congue vituperata. Solum patrioque no sea. Mea ex malis mollis
+            oporteat. Eum an expetenda consequat.
+          </p>
+          <div
+            class="mx-6 py-10 md:py-12 md:space-x-2 grid gap-y-4 md:justify-start md:flex"
+          >
+            <a
+              href="#"
+              class="capitalize bg-[#006DFE] text-white rounded px-20 md:px-8 py-2.5 text-center"
+              >view video</a
+            >
+            <a
+              href="#"
+              class="capitalize bg-[#ADB4D2] md:px-8 py-2.5 text-white rounded px-24 text-center"
+              >see services</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---second section-->
+    <section class="mt-20">
+      <div class="lg:grid lg:grid-cols-2 lg:mx-28">
+        <div>
+          <h4 class="px-6 text-base font-thin text-blue-500">
+            Desktop and Mobile App
+          </h4>
+          <h1 class="px-6 text-[30px] font-medium py-5 text-[#444]">
+            Build and Deploy
+          </h1>
+          <p class="px-6 text-[#666] py-3">
+            Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
+            atqui laudem an, insolens gubergren similique est cu. Et vel modus
+            congue vituperata. Solum patrioque no sea. Mea ex malis mollis
+            oporteat. Eum an expetenda consequat.
+          </p>
+          <div
+            class="md:space-x-2 py-8 grid gap-y-4 mx-6 md:flex md:justify-start"
+          >
+            <a
+              href="#"
+              class="capitalize bg-[#006DFE] text-white rounded px-20 py-2.5 md:px-8 text-center"
+              >view video</a
+            >
+            <a
+              href="#"
+              class="capitalize bg-[#ADB4D2] md:px-8 py-2.5 text-white rounded px-24 text-center"
+              >see services</a
+            >
+          </div>
+        </div>
+        <div>
+          <img src="./assets/img/service-img2.svg" alt="service-img2" />
+        </div>
+      </div>
+    </section>
+    <!--end plan section-->
+
+    <!---trusted section-->
+    <section
+      class="bg-gradient-to-r from-blue-600 to-blue-800 min-h-[500px] lg:min-h-[240px] mt-10"
+    >
+      <div class="lg:flex lg:justify-between">
+        <div class="pt-24 lg:px-28">
+          <div class="flex justify-center">
+            <div class="-rotate-90 grid">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 fill-white flex"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 120.81"
+                style="enable-background: new 0 0 122.88 120.81"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M15.44,85.83c1.26-0.98,3.08-0.75,4.06,0.51c0.98,1.26,0.75,3.08-0.51,4.06l-13.1,10.17l-0.1,13.39l15.78-0.88l8.73-13.87 c0.85-1.35,2.63-1.75,3.98-0.9c1.35,0.85,1.75,2.63,0.9,3.98l-9.47,15.05c-0.47,0.81-1.33,1.37-2.34,1.43L3.04,119.9l0,0 c-0.06,0-0.11,0-0.17,0c-1.59-0.01-2.88-1.3-2.87-2.89l0.13-17.65c-0.07-0.93,0.32-1.88,1.11-2.5L15.44,85.83L15.44,85.83z M40.28,53.81c6.59-19.69,15.46-33.64,27.95-42.44C81.2,2.25,97.86-1.21,119.69,0.37c1.51,0.11,2.66,1.35,2.69,2.83 c2.11,23.64-2.47,40.4-12.25,53.1C100.71,68.51,86.6,76.77,69.07,83.7v23.07c0,1.13-0.65,2.11-1.6,2.59l-17.84,11.02 c-1.35,0.84-3.13,0.42-3.97-0.94c-0.22-0.36-0.36-0.75-0.41-1.14l0,0c-3.95-30.19-8.15-31.64-32.83-40.18 C9.48,77.1,6.29,76,4.14,75.24c-1.5-0.53-2.29-2.18-1.76-3.69c0.11-0.32,0.28-0.61,0.48-0.86l11.76-16.77 c0.59-0.84,1.54-1.27,2.5-1.23v0L40.28,53.81L40.28,53.81z M84.68,25.72c3.36,0,6.4,1.36,8.6,3.56c2.2,2.2,3.56,5.24,3.56,8.6 c0,3.36-1.36,6.4-3.56,8.6c-2.2,2.2-5.24,3.56-8.6,3.56c-3.36,0-6.4-1.36-8.6-3.56c-2.2-2.2-3.56-5.24-3.56-8.6 c0-3.36,1.36-6.4,3.56-8.6C78.28,27.08,81.32,25.72,84.68,25.72L84.68,25.72z M90.48,32.08c-1.48-1.48-3.53-2.4-5.8-2.4 c-2.26,0-4.31,0.92-5.8,2.4c-1.48,1.48-2.4,3.53-2.4,5.8c0,2.26,0.92,4.31,2.4,5.8c1.48,1.48,3.53,2.4,5.8,2.4 c2.26,0,4.31-0.92,5.8-2.4c1.48-1.48,2.4-3.53,2.4-5.8C92.88,35.61,91.96,33.56,90.48,32.08L90.48,32.08z M71.55,16.1 c-11.81,8.32-20.18,21.94-26.43,41.43c-0.34,1.29-1.54,2.22-2.93,2.15l-23.77-1.16L9.64,71.05c1.86,0.65,3.29,1.15,4.66,1.62 c26.32,9.1,31.79,10.99,36.07,40.47l12.91-7.97V81.74h0.01c0-1.16,0.71-2.25,1.85-2.69c17.46-6.72,31.41-14.6,40.41-26.28 c8.59-11.15,12.75-25.95,11.26-46.79C97.58,4.92,82.89,8.13,71.55,16.1L71.55,16.1z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div>
+              <h1
+                class="text-center text-white font-medium lg:font-semibold text-3xl lg:text-left"
+              >
+                Trusted by 4000+
+              </h1>
+              <p class="text-center text-white pt-2 font-thin lg:text-left">
+                High performing team worldwide
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="md:flex md:justify-center md:space-x-20 md:pt-6 lg:pt-20 lg:px-32"
+        >
+          <div class="text-center py-4">
+            <h1 class="text-white text-3xl font-semibold lg:font-bold">1000</h1>
+            <p class="text-white pt-1 font-thin text-lg">Happy Clients</p>
+          </div>
+          <div class="text-center py-4">
+            <h1 class="text-white text-3xl font-semibold lg:font-bold">4000</h1>
+            <p class="text-white pt-1 font-thin text-lg">Wining Award</p>
+          </div>
+          <div class="text-center py-4">
+            <h1 class="text-white text-3xl font-semibold lg:font-bold">5000</h1>
+            <p class="text-white pt-1 font-thin text-lg">Team Member</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--- end trusted section-->
+
+    <!--pricing section-->
+    <section class="container pt-20 pb-20">
+      <div class="text-center">
+        <h1 class="text-3xl capitalize font-normal text-[#666]">our pricing</h1>
+        <div
+          class="w-[12%] lg:w-[4%] m-auto my-4 border-t border-[thin] border-[#006DFE] md:w-[6%]"
+        ></div>
+        <p
+          class="px-8 text-sm text-[#666] py-4 md:px-32 lg:px-72 lg:text-base lg:text-[#666]"
+        >
+          Business consulting excepteur sint occaecat cupidatat consulting non
+          proident, sunt in culpa qui officia deserunt laborum market.
+        </p>
+      </div>
+
+      <div
+        class="mt-8 md:gap-x-16 md:grid md:grid-cols-2 lg:grid-cols-4 lg:space-x-3 lg:mx-24 grid grid-cols-1 gap-y-4 px-6"
+      >
+        <div
+          class="bg-white rounded overflow-hidden shadow-2xl w-[103%] md:w-[113%] lg:w-[120%] pb-8 lg:h-[97%]"
+        >
+          <h1
+            class="text-center text-stone-500 text-2xl font-normal pt-20 lg:pt-10"
+          >
+            Basic
+          </h1>
+          <p class="text-center text-stone-500 text-sm pt-3">
+            for small business
+          </p>
+          <p class="text-center text-3xl font-semibold py-10 text-slate-800">
+            <span
+              class="text-lg relative -left-[3px] -top-[12px] font-normal text-stone-500"
+              >$</span
+            >29<span class="text-sm text-stone-500 pl-1 font-thin">/mo</span>
+          </p>
+          <p class="text-center text-stone-500 text-sm py-1.5">3 Users</p>
+          <p class="text-center text-stone-500 text-sm py-1.5">
+            Unlimited projects
+          </p>
+          <p class="text-center text-stone-500 text-sm py-1.5">
+            Download Prototypes
+          </p>
+          <div class="text-center my-10">
+            <a href="#" class="bg-[#006DFE] px-6 py-3 rounded text-white"
+              >get started</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded overflow-hidden shadow-2xl w-[103%] md:w-[113%] lg:w-[120%] pb-8 lg:h-[97%]"
+        >
+          <h1
+            class="text-center text-stone-500 text-2xl font-normal pt-20 lg:pt-10"
+          >
+            Standard
+          </h1>
+          <p class="text-center text-stone-500 text-sm pt-3">for companies</p>
+          <p class="text-center text-3xl font-semibold py-10 text-slate-800">
+            <span
+              class="text-lg relative -left-[3px] -top-[12px] font-normal text-stone-500"
+              >$</span
+            >59<span class="text-sm text-stone-500 pl-1 font-thin">/mo</span>
+          </p>
+          <p class="text-center text-stone-500 text-sm py-1.5">3 Users</p>
+          <p class="text-center text-stone-500 text-sm py-1.5">
+            Unlimited projects
+          </p>
+          <p class="text-center text-stone-500 text-sm py-1.5">
+            Download Prototypes
+          </p>
+          <div class="text-center my-10">
+            <a href="#" class="bg-[#006DFE] px-6 py-3 rounded text-white"
+              >get started</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded overflow-hidden shadow-2xl w-[103%] md:w-[113%] lg:w-[120%] pb-8 lg:h-[97%]"
+        >
+          <h1
+            class="text-center text-stone-500 text-2xl font-normal pt-20 lg:pt-10"
+          >
+            Professonal
+          </h1>
+          <p class="text-center text-stone-500 text-sm pt-3">
+            for small business
+          </p>
+          <p class="text-center text-3xl font-semibold py-10 text-slate-800">
+            <span
+              class="text-lg relative -left-[3px] -top-[12px] font-normal text-stone-500"
+              >$</span
+            >79<span class="text-sm text-stone-500 pl-1 font-thin">/mo</span>
+          </p>
+          <p class="text-center text-stone-500 text-sm py-1.5">3 Users</p>
+          <p class="text-center text-stone-500 text-sm py-1.5">
+            Unlimited projects
+          </p>
+          <p class="text-center text-stone-500 text-sm py-1.5">
+            Download Prototypes
+          </p>
+          <div class="text-center my-10">
+            <a href="#" class="bg-[#006DFE] px-6 py-3 rounded text-white"
+              >get started</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded overflow-hidden shadow-2xl w-[103%] md:w-[113%] lg:w-[120%] pb-8 lg:h-[97%]"
+        >
+          <h1
+            class="text-center text-stone-500 text-2xl font-normal pt-20 lg:pt-10"
+          >
+            Most Popular
+          </h1>
+          <p class="text-center text-stone-500 text-sm pt-3">
+            for small business
+          </p>
+          <p class="text-center text-3xl font-semibold py-10 text-slate-800">
+            <span
+              class="text-lg relative -left-[3px] -top-[12px] font-normal text-stone-500"
+              >$</span
+            >99<span class="text-sm text-stone-500 pl-1 font-thin">/mo</span>
+          </p>
+          <p class="text-center text-stone-500 text-sm py-1.5">3 Users</p>
+          <p class="text-center text-stone-500 text-sm py-1.5">
+            Unlimited projects
+          </p>
+          <p class="text-center text-stone-500 text-sm py-1.5">
+            Download Prototypes
+          </p>
+          <div class="text-center my-10">
+            <a href="#" class="bg-[#006DFE] px-6 py-3 rounded text-white"
+              >get started</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end pricing section-->
+
+    <!---people section-->
+    <section class="bg-[#F5F8FF] pt-20 pb-20">
+      <div class="text-center">
+        <h1 class="text-3xl capitalize font-normal text-[#333]">
+          what say people
+        </h1>
+        <div
+          class="w-[12%] lg:w-[4%] m-auto my-4 border-t border-[thin] border-[#006DFE] md:w-[6%]"
+        ></div>
+        <p
+          class="px-8 text-sm text-[#666] py-4 md:px-32 lg:px-72 lg:text-base lg:text-[#666]"
+        >
+          Continually network virtual strategic theme areas vis-a-vis ubiquitous
+          potentialities. Holisticly negotiate focused e-tailers without premium
+          solutions.
+        </p>
+      </div>
+  
+      <div class="lg:mx-28  mt-14 mx-8">
+        
+        <div class="flex space-x-10 cards">
+          <div
+            class="bg-white rounded overflow-hidden shadow-2xl pb-8 hover:border-b-2 border-[#006DFE] transition duration-500 lg:w-[45%] lg:h-[250px]"
+          >
+            <p class="pt-14 px-12 text-[#666] font-medium">
+              " I just brought it and i love it. Easily the best tool for
+              mockups i have encountered ever and that's why this is the best
+              for me."
+            </p>
+
+            <div class="flex ml-10 mt-6">
+              <img src="./assets/img/testi1.jpg" alt="text1" class="w-16" />
+
+              <div class="pl-4 pt-2">
+                <h1 class="text-[#333] font-medium">Karmo kerin</h1>
+                <p class="text-[#888]">CEO - Apptech</p>
+              </div>
+            </div>
+          </div>
+
+          <!--1nd card-->
+          <div
+            class="bg-white rounded overflow-hidden shadow-2xl pb-8 hover:border-b-2 border-[#006DFE] lg:w-[45%] lg:h-[250px] lg:block md:block"
+          >
+            <p class="pt-14 px-12 text-[#666] font-medium">
+              " I just brought it and i love it. Easily the best tool for
+              mockups i have encountered ever and that's why this is the best
+              for me."
+            </p>
+
+            <div class="flex ml-10 mt-6">
+              <img src="./assets/img/testi2.jpg" alt="text2" class="w-16" />
+
+              <div class="pl-4 pt-2">
+                <h1 class="text-[#333] font-medium">Jhon Dimo</h1>
+                <p class="text-[#888]">CEO - Dream app</p>
+              </div>
+            </div>
+          </div>
+          <!---2nd cards-->
+
+          <div class="bg-white rounded overflow-hidden shadow-2xl pb-8 hover:border-b-2 border-[#006DFE] lg:w-[45%] lg:h-[250px] ">
+              
+              
+            <p class="pt-14 px-12 text-[#666] font-medium">" I just brought it and i love it. Easily the best tool for mockups i have encountered ever and that's why this is the best for me."</p>
+
+            <div class="flex ml-10 mt-6">
+
+              <img src="./assets/img/testi3.jpg" alt="text3" class="w-16">
+
+              <div class="pl-4 pt-2">
+
+                <h1 class="text-[#333] font-medium">kerio chal</h1>
+                <p class="text-[#888]">CEO - Apptrend</p>
+
+              </div>
+
+            </div>
+          </div>
+          <!---3nd cards-->
+        </div>
+      </div>
+
+      <!--click carousel-->
+      <div class="flex justify-end relative right-[45px] -top-[170px]">
+        <div
+          class="bg-white rounded overflow-hidden shadow-2xl px-4 py-3 h-[120px] w-[45px] hidden lg:block"
+        >
+          <div class="form-check mt-[10px]">
+            <input
+              class="form-check-input rounded-full h-3.5 w-3.5 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 my-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+              type="radio"
+              name="flexRadioDefault"
+              id="prevArrow"
+            />
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input rounded-full h-3.5 w-3.5 border  previous border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 my-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault10"
+            />
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input rounded-full h-3.5 w-3.5 next border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 transition duration-200 my-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+              type="radio"
+              name="flexRadioDefault"
+              id="nextArrow"
+              checked
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---end people section-->
+
+    <!--team section-->
+    <section>
+      <div class="text-center pt-20">
+        <h1 class="text-3xl capitalize font-normal text-[#333]">
+          Our awesome Team
+        </h1>
+        <div
+          class="w-[12%] lg:w-[4%] m-auto my-4 border-t border-[thin] border-[#006DFE] md:w-[6%]"
+        ></div>
+        <p
+          class="px-8 text-sm text-[#666] py-4 md:px-32 lg:px-72 lg:text-base lg:text-[#666]"
+        >
+          Business consulting excepteur sint occaecat cupidatat consulting non
+          proident, sunt in culpa qui officia deserunt laborum market.
+        </p>
+      </div>
+
+      <div
+        class="pt-14 md:grid md:grid-cols-2 md:space-x-5 lg:grid-cols-4 lg:space-x-8 lg:w-[80%] lg:mx-24 grid gap-y-10"
+      >
+        <div class="mx-4 group">
+          <img src="./assets/img/team2.jpg" alt="team2" />
+
+          <!--animation-->
+          <div
+            class="relative justify-start overflow-hidden transition-all bg-white hover:bg-white group"
+          >
+            <span
+              class="h-0 bg-[#006DFE] absolute top-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"
+            >
+            </span>
+
+            <div class="bg-[#F5F8FF] text-center pt-10 pb-5">
+              <h1 class="text-[#006DFE] text-lg">Jhone digo</h1>
+              <p class="py-2 text-[#aaa] font-thin text-sm">Markeitng</p>
+              <ul class="flex justify-center space-x-5 my-4">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    class="w-3 h-3 fill-[#666]"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M380.001 120.001h99.993V0h-99.993c-77.186 0-139.986 62.8-139.986 139.986v60h-80.009V320h79.985v320h120.013V320h99.994l19.996-120.013h-119.99v-60.001c0-10.843 9.154-19.996 19.996-19.996v.012z"
+                    />
+                  </svg>
+                </li>
+
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    class="w-3 h-3 fill-[#666]"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M640.012 121.513c-23.528 10.524-48.875 17.516-75.343 20.634 27.118-16.24 47.858-41.977 57.756-72.615-25.347 14.988-53.516 25.985-83.363 31.866-24-25.5-58.087-41.35-95.848-41.35-72.508 0-131.21 58.736-131.21 131.198 0 10.228 1.134 20.232 3.355 29.882-109.1-5.528-205.821-57.757-270.57-137.222a131.423 131.423 0 0 0-17.764 66c0 45.497 23.102 85.738 58.347 109.207-21.508-.638-41.74-6.638-59.505-16.359v1.642c0 63.627 45.225 116.718 105.32 128.718-11.008 2.988-22.63 4.642-34.606 4.642-8.48 0-16.654-.874-24.78-2.35 16.783 52.11 65.233 90.095 122.612 91.205-44.989 35.245-101.493 56.233-163.09 56.233-10.63 0-20.988-.65-31.334-1.89 58.229 37.359 127.206 58.997 201.31 58.997 241.42 0 373.552-200.069 373.552-373.54 0-5.764-.13-11.35-.366-16.996 25.642-18.343 47.87-41.493 65.469-67.844l.059-.059z"
+                    />
+                  </svg>
+                </li>
+
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    class="w-3 h-3 fill-[#666]"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M185.577 119.517c18.862 0 35.847 1.642 51.331 5.008 15.52 3.236 28.63 8.752 39.757 16.24 10.996 7.512 19.476 17.516 25.748 29.989 6 12.354 9 27.862 9 46.229 0 19.878-4.476 36.355-13.512 49.63-9.118 13.24-22.358 24-40.122 32.516 24.236 6.993 42.118 19.24 54.118 36.627 11.989 17.516 17.753 38.504 17.753 63.225 0 19.996-3.886 37.11-11.469 51.615-7.748 14.634-18.248 26.492-31.11 35.634-12.993 9.236-27.993 15.992-44.753 20.363-16.642 4.346-33.756 6.626-51.45 6.626H0V119.553l185.601.012-.023-.048zm232.042 31.76h159.616v38.883l-159.616-.012v-38.883.012zm35.469 293.448c11.764 11.469 28.63 17.233 50.646 17.233 15.745 0 29.516-4.016 40.867-12.012 11.35-7.996 18.248-16.465 20.882-25.229l68.965.012c-11.126 34.347-27.874 58.749-50.859 73.5-22.642 14.753-50.35 22.241-82.5 22.241-22.524 0-42.627-3.65-60.757-10.772-18.119-7.24-33.237-17.35-45.993-30.638-12.366-13.24-22.11-28.984-28.996-47.493-6.756-18.354-10.229-38.752-10.229-60.744 0-21.367 3.52-41.245 10.477-59.623 7.122-18.52 16.878-34.359 29.87-47.753 12.98-13.382 28.229-24 46.24-31.748 17.883-7.76 37.631-11.646 59.505-11.646 24.107 0 45.225 4.642 63.356 14.126 18 9.355 32.87 21.993 44.492 37.749 11.646 15.768 19.878 33.874 25.004 54.107 5.126 20.232 6.875 41.35 5.469 63.508H433.706c0 22.359 7.512 43.76 19.358 55.1l.024.082zm89.871-149.707c-9.236-10.24-25.122-15.874-44.233-15.874-12.52 0-22.866 2.114-31.11 6.366-8.115 4.229-14.752 9.473-19.878 15.745-4.997 6.248-8.516 13.004-10.465 20.102-1.996 6.874-3.236 13.24-3.65 18.756l127.502-.012c-1.878-19.984-8.752-34.736-18.118-45.106l-.047.023zm-368.662-16.524c15.355 0 28.099-3.65 38.091-11.008 9.992-7.24 14.752-19.24 14.752-35.752 0-9.106-1.63-16.76-4.878-22.642-3.354-5.87-7.76-10.512-13.37-13.748-5.516-3.355-11.74-5.646-19.099-6.886-7.122-1.358-14.634-1.984-22.24-1.984H86.576v91.973h87.745l-.024.047zm4.748 167.59c8.528 0 16.642-.757 24.213-2.528 7.748-1.748 14.634-4.359 20.363-8.35 5.752-3.887 10.641-8.989 14.114-15.745 3.52-6.638 5.126-15.118 5.126-25.477 0-20.232-5.764-34.748-17.114-43.512-11.351-8.646-26.47-12.874-45.214-12.874H86.552V445.93l92.493-.012v.165z"
+                    />
+                  </svg>
+                </li>
+
+                <li>
+                  <svg
+                    id="Layer_1"
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 122.88 122.88"
+                    class="w-3 h-3 fill-[#666]"
+                  >
+                    <title>instagram-logo-black-and-white</title>
+                    <path
+                      d="M61.45,0C44.76,0,42.66.07,36.11.37A45.08,45.08,0,0,0,21.2,3.23a29.86,29.86,0,0,0-10.88,7.08,30.26,30.26,0,0,0-7.1,10.88A44.92,44.92,0,0,0,.37,36.11C.08,42.66,0,44.75,0,61.44S.07,80.21.37,86.77a45.08,45.08,0,0,0,2.86,14.91,30.12,30.12,0,0,0,7.08,10.88,30.13,30.13,0,0,0,10.88,7.1,45.17,45.17,0,0,0,14.92,2.85c6.55.3,8.64.37,25.33.37s18.77-.07,25.33-.37a45.17,45.17,0,0,0,14.92-2.85,31.54,31.54,0,0,0,18-18,45.6,45.6,0,0,0,2.86-14.91c.29-6.55.37-8.64.37-25.33s-.08-18.78-.37-25.33a45.66,45.66,0,0,0-2.86-14.92,30.1,30.1,0,0,0-7.09-10.88,29.77,29.77,0,0,0-10.88-7.08A45.14,45.14,0,0,0,86.76.37C80.2.07,78.12,0,61.43,0ZM55.93,11.07h5.52c16.4,0,18.34.06,24.82.36a34,34,0,0,1,11.41,2.11,19,19,0,0,1,7.06,4.6,19.16,19.16,0,0,1,4.6,7.06,34,34,0,0,1,2.11,11.41c.3,6.47.36,8.42.36,24.82s-.06,18.34-.36,24.82a33.89,33.89,0,0,1-2.11,11.4A20.35,20.35,0,0,1,97.68,109.3a33.64,33.64,0,0,1-11.41,2.12c-6.47.3-8.42.36-24.82.36s-18.35-.06-24.83-.36a34,34,0,0,1-11.41-2.12,19,19,0,0,1-7.07-4.59,19,19,0,0,1-4.59-7.06,34,34,0,0,1-2.12-11.41c-.29-6.48-.35-8.42-.35-24.83s.06-18.34.35-24.82a33.7,33.7,0,0,1,2.12-11.41,19,19,0,0,1,4.59-7.06,19.12,19.12,0,0,1,7.07-4.6A34.22,34.22,0,0,1,36.62,11.4c5.67-.25,7.86-.33,19.31-.34Zm38.31,10.2a7.38,7.38,0,1,0,7.38,7.37,7.37,7.37,0,0,0-7.38-7.37ZM61.45,29.89A31.55,31.55,0,1,0,93,61.44,31.56,31.56,0,0,0,61.45,29.89Zm0,11.07A20.48,20.48,0,1,1,41,61.44,20.48,20.48,0,0,1,61.45,41Z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--2nd card-->
+        <div class="mx-4 group">
+          <img src="./assets/img/team3.jpg" alt="team3" />
+          <div
+            class="relative justify-start overflow-hidden transition-all group"
+          >
+            <span
+              class="h-0 bg-[#006DFE] absolute top-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"
+            ></span>
+            <div class="bg-[#F5F8FF] text-center pt-10 pb-5">
+              <h1 class="text-[#006DFE] text-lg">Zara tingo</h1>
+              <p class="py-2 text-[#aaa] font-thin text-sm">Web Developer</p>
+              <ul class="flex justify-center space-x-5 my-4">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    class="w-3 h-3 fill-[#666]"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M380.001 120.001h99.993V0h-99.993c-77.186 0-139.986 62.8-139.986 139.986v60h-80.009V320h79.985v320h120.013V320h99.994l19.996-120.013h-119.99v-60.001c0-10.843 9.154-19.996 19.996-19.996v.012z"
+                    />
+                  </svg>
+                </li>
+
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    class="w-3 h-3 fill-[#666]"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M640.012 121.513c-23.528 10.524-48.875 17.516-75.343 20.634 27.118-16.24 47.858-41.977 57.756-72.615-25.347 14.988-53.516 25.985-83.363 31.866-24-25.5-58.087-41.35-95.848-41.35-72.508 0-131.21 58.736-131.21 131.198 0 10.228 1.134 20.232 3.355 29.882-109.1-5.528-205.821-57.757-270.57-137.222a131.423 131.423 0 0 0-17.764 66c0 45.497 23.102 85.738 58.347 109.207-21.508-.638-41.74-6.638-59.505-16.359v1.642c0 63.627 45.225 116.718 105.32 128.718-11.008 2.988-22.63 4.642-34.606 4.642-8.48 0-16.654-.874-24.78-2.35 16.783 52.11 65.233 90.095 122.612 91.205-44.989 35.245-101.493 56.233-163.09 56.233-10.63 0-20.988-.65-31.334-1.89 58.229 37.359 127.206 58.997 201.31 58.997 241.42 0 373.552-200.069 373.552-373.54 0-5.764-.13-11.35-.366-16.996 25.642-18.343 47.87-41.493 65.469-67.844l.059-.059z"
+                    />
+                  </svg>
+                </li>
+
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    class="w-3 h-3 fill-[#666]"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M185.577 119.517c18.862 0 35.847 1.642 51.331 5.008 15.52 3.236 28.63 8.752 39.757 16.24 10.996 7.512 19.476 17.516 25.748 29.989 6 12.354 9 27.862 9 46.229 0 19.878-4.476 36.355-13.512 49.63-9.118 13.24-22.358 24-40.122 32.516 24.236 6.993 42.118 19.24 54.118 36.627 11.989 17.516 17.753 38.504 17.753 63.225 0 19.996-3.886 37.11-11.469 51.615-7.748 14.634-18.248 26.492-31.11 35.634-12.993 9.236-27.993 15.992-44.753 20.363-16.642 4.346-33.756 6.626-51.45 6.626H0V119.553l185.601.012-.023-.048zm232.042 31.76h159.616v38.883l-159.616-.012v-38.883.012zm35.469 293.448c11.764 11.469 28.63 17.233 50.646 17.233 15.745 0 29.516-4.016 40.867-12.012 11.35-7.996 18.248-16.465 20.882-25.229l68.965.012c-11.126 34.347-27.874 58.749-50.859 73.5-22.642 14.753-50.35 22.241-82.5 22.241-22.524 0-42.627-3.65-60.757-10.772-18.119-7.24-33.237-17.35-45.993-30.638-12.366-13.24-22.11-28.984-28.996-47.493-6.756-18.354-10.229-38.752-10.229-60.744 0-21.367 3.52-41.245 10.477-59.623 7.122-18.52 16.878-34.359 29.87-47.753 12.98-13.382 28.229-24 46.24-31.748 17.883-7.76 37.631-11.646 59.505-11.646 24.107 0 45.225 4.642 63.356 14.126 18 9.355 32.87 21.993 44.492 37.749 11.646 15.768 19.878 33.874 25.004 54.107 5.126 20.232 6.875 41.35 5.469 63.508H433.706c0 22.359 7.512 43.76 19.358 55.1l.024.082zm89.871-149.707c-9.236-10.24-25.122-15.874-44.233-15.874-12.52 0-22.866 2.114-31.11 6.366-8.115 4.229-14.752 9.473-19.878 15.745-4.997 6.248-8.516 13.004-10.465 20.102-1.996 6.874-3.236 13.24-3.65 18.756l127.502-.012c-1.878-19.984-8.752-34.736-18.118-45.106l-.047.023zm-368.662-16.524c15.355 0 28.099-3.65 38.091-11.008 9.992-7.24 14.752-19.24 14.752-35.752 0-9.106-1.63-16.76-4.878-22.642-3.354-5.87-7.76-10.512-13.37-13.748-5.516-3.355-11.74-5.646-19.099-6.886-7.122-1.358-14.634-1.984-22.24-1.984H86.576v91.973h87.745l-.024.047zm4.748 167.59c8.528 0 16.642-.757 24.213-2.528 7.748-1.748 14.634-4.359 20.363-8.35 5.752-3.887 10.641-8.989 14.114-15.745 3.52-6.638 5.126-15.118 5.126-25.477 0-20.232-5.764-34.748-17.114-43.512-11.351-8.646-26.47-12.874-45.214-12.874H86.552V445.93l92.493-.012v.165z"
+                    />
+                  </svg>
+                </li>
+
+                <li>
+                  <svg
+                    id="Layer_1"
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 122.88 122.88"
+                    class="w-3 h-3 fill-[#666]"
+                  >
+                    <title>instagram-logo-black-and-white</title>
+                    <path
+                      d="M61.45,0C44.76,0,42.66.07,36.11.37A45.08,45.08,0,0,0,21.2,3.23a29.86,29.86,0,0,0-10.88,7.08,30.26,30.26,0,0,0-7.1,10.88A44.92,44.92,0,0,0,.37,36.11C.08,42.66,0,44.75,0,61.44S.07,80.21.37,86.77a45.08,45.08,0,0,0,2.86,14.91,30.12,30.12,0,0,0,7.08,10.88,30.13,30.13,0,0,0,10.88,7.1,45.17,45.17,0,0,0,14.92,2.85c6.55.3,8.64.37,25.33.37s18.77-.07,25.33-.37a45.17,45.17,0,0,0,14.92-2.85,31.54,31.54,0,0,0,18-18,45.6,45.6,0,0,0,2.86-14.91c.29-6.55.37-8.64.37-25.33s-.08-18.78-.37-25.33a45.66,45.66,0,0,0-2.86-14.92,30.1,30.1,0,0,0-7.09-10.88,29.77,29.77,0,0,0-10.88-7.08A45.14,45.14,0,0,0,86.76.37C80.2.07,78.12,0,61.43,0ZM55.93,11.07h5.52c16.4,0,18.34.06,24.82.36a34,34,0,0,1,11.41,2.11,19,19,0,0,1,7.06,4.6,19.16,19.16,0,0,1,4.6,7.06,34,34,0,0,1,2.11,11.41c.3,6.47.36,8.42.36,24.82s-.06,18.34-.36,24.82a33.89,33.89,0,0,1-2.11,11.4A20.35,20.35,0,0,1,97.68,109.3a33.64,33.64,0,0,1-11.41,2.12c-6.47.3-8.42.36-24.82.36s-18.35-.06-24.83-.36a34,34,0,0,1-11.41-2.12,19,19,0,0,1-7.07-4.59,19,19,0,0,1-4.59-7.06,34,34,0,0,1-2.12-11.41c-.29-6.48-.35-8.42-.35-24.83s.06-18.34.35-24.82a33.7,33.7,0,0,1,2.12-11.41,19,19,0,0,1,4.59-7.06,19.12,19.12,0,0,1,7.07-4.6A34.22,34.22,0,0,1,36.62,11.4c5.67-.25,7.86-.33,19.31-.34Zm38.31,10.2a7.38,7.38,0,1,0,7.38,7.37,7.37,7.37,0,0,0-7.38-7.37ZM61.45,29.89A31.55,31.55,0,1,0,93,61.44,31.56,31.56,0,0,0,61.45,29.89Zm0,11.07A20.48,20.48,0,1,1,41,61.44,20.48,20.48,0,0,1,61.45,41Z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--3nd cart-->
+        <div class="mx-4 group">
+          <img src="./assets/img/team1.jpg" alt="team1" />
+          <div
+            class="relative justify-start overflow-hidden transition-all group"
+          >
+            <span
+              class="h-0 bg-[#006DFE] absolute top-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"
+            ></span>
+            <div class="bg-[#F5F8FF] text-center pt-10 pb-5">
+              <h1 class="text-[#006DFE] text-lg">Dahlia Moore</h1>
+              <p class="py-2 text-[#aaa] font-thin text-sm">Senior Manager</p>
+              <ul class="flex justify-center space-x-5 my-4">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    class="w-3 h-3 fill-[#666]"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M380.001 120.001h99.993V0h-99.993c-77.186 0-139.986 62.8-139.986 139.986v60h-80.009V320h79.985v320h120.013V320h99.994l19.996-120.013h-119.99v-60.001c0-10.843 9.154-19.996 19.996-19.996v.012z"
+                    />
+                  </svg>
+                </li>
+
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    class="w-3 h-3 fill-[#666]"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M640.012 121.513c-23.528 10.524-48.875 17.516-75.343 20.634 27.118-16.24 47.858-41.977 57.756-72.615-25.347 14.988-53.516 25.985-83.363 31.866-24-25.5-58.087-41.35-95.848-41.35-72.508 0-131.21 58.736-131.21 131.198 0 10.228 1.134 20.232 3.355 29.882-109.1-5.528-205.821-57.757-270.57-137.222a131.423 131.423 0 0 0-17.764 66c0 45.497 23.102 85.738 58.347 109.207-21.508-.638-41.74-6.638-59.505-16.359v1.642c0 63.627 45.225 116.718 105.32 128.718-11.008 2.988-22.63 4.642-34.606 4.642-8.48 0-16.654-.874-24.78-2.35 16.783 52.11 65.233 90.095 122.612 91.205-44.989 35.245-101.493 56.233-163.09 56.233-10.63 0-20.988-.65-31.334-1.89 58.229 37.359 127.206 58.997 201.31 58.997 241.42 0 373.552-200.069 373.552-373.54 0-5.764-.13-11.35-.366-16.996 25.642-18.343 47.87-41.493 65.469-67.844l.059-.059z"
+                    />
+                  </svg>
+                </li>
+
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    class="w-3 h-3 fill-[#666]"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M185.577 119.517c18.862 0 35.847 1.642 51.331 5.008 15.52 3.236 28.63 8.752 39.757 16.24 10.996 7.512 19.476 17.516 25.748 29.989 6 12.354 9 27.862 9 46.229 0 19.878-4.476 36.355-13.512 49.63-9.118 13.24-22.358 24-40.122 32.516 24.236 6.993 42.118 19.24 54.118 36.627 11.989 17.516 17.753 38.504 17.753 63.225 0 19.996-3.886 37.11-11.469 51.615-7.748 14.634-18.248 26.492-31.11 35.634-12.993 9.236-27.993 15.992-44.753 20.363-16.642 4.346-33.756 6.626-51.45 6.626H0V119.553l185.601.012-.023-.048zm232.042 31.76h159.616v38.883l-159.616-.012v-38.883.012zm35.469 293.448c11.764 11.469 28.63 17.233 50.646 17.233 15.745 0 29.516-4.016 40.867-12.012 11.35-7.996 18.248-16.465 20.882-25.229l68.965.012c-11.126 34.347-27.874 58.749-50.859 73.5-22.642 14.753-50.35 22.241-82.5 22.241-22.524 0-42.627-3.65-60.757-10.772-18.119-7.24-33.237-17.35-45.993-30.638-12.366-13.24-22.11-28.984-28.996-47.493-6.756-18.354-10.229-38.752-10.229-60.744 0-21.367 3.52-41.245 10.477-59.623 7.122-18.52 16.878-34.359 29.87-47.753 12.98-13.382 28.229-24 46.24-31.748 17.883-7.76 37.631-11.646 59.505-11.646 24.107 0 45.225 4.642 63.356 14.126 18 9.355 32.87 21.993 44.492 37.749 11.646 15.768 19.878 33.874 25.004 54.107 5.126 20.232 6.875 41.35 5.469 63.508H433.706c0 22.359 7.512 43.76 19.358 55.1l.024.082zm89.871-149.707c-9.236-10.24-25.122-15.874-44.233-15.874-12.52 0-22.866 2.114-31.11 6.366-8.115 4.229-14.752 9.473-19.878 15.745-4.997 6.248-8.516 13.004-10.465 20.102-1.996 6.874-3.236 13.24-3.65 18.756l127.502-.012c-1.878-19.984-8.752-34.736-18.118-45.106l-.047.023zm-368.662-16.524c15.355 0 28.099-3.65 38.091-11.008 9.992-7.24 14.752-19.24 14.752-35.752 0-9.106-1.63-16.76-4.878-22.642-3.354-5.87-7.76-10.512-13.37-13.748-5.516-3.355-11.74-5.646-19.099-6.886-7.122-1.358-14.634-1.984-22.24-1.984H86.576v91.973h87.745l-.024.047zm4.748 167.59c8.528 0 16.642-.757 24.213-2.528 7.748-1.748 14.634-4.359 20.363-8.35 5.752-3.887 10.641-8.989 14.114-15.745 3.52-6.638 5.126-15.118 5.126-25.477 0-20.232-5.764-34.748-17.114-43.512-11.351-8.646-26.47-12.874-45.214-12.874H86.552V445.93l92.493-.012v.165z"
+                    />
+                  </svg>
+                </li>
+
+                <li>
+                  <svg
+                    id="Layer_1"
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 122.88 122.88"
+                    class="w-3 h-3 fill-[#666]"
+                  >
+                    <title>instagram-logo-black-and-white</title>
+                    <path
+                      d="M61.45,0C44.76,0,42.66.07,36.11.37A45.08,45.08,0,0,0,21.2,3.23a29.86,29.86,0,0,0-10.88,7.08,30.26,30.26,0,0,0-7.1,10.88A44.92,44.92,0,0,0,.37,36.11C.08,42.66,0,44.75,0,61.44S.07,80.21.37,86.77a45.08,45.08,0,0,0,2.86,14.91,30.12,30.12,0,0,0,7.08,10.88,30.13,30.13,0,0,0,10.88,7.1,45.17,45.17,0,0,0,14.92,2.85c6.55.3,8.64.37,25.33.37s18.77-.07,25.33-.37a45.17,45.17,0,0,0,14.92-2.85,31.54,31.54,0,0,0,18-18,45.6,45.6,0,0,0,2.86-14.91c.29-6.55.37-8.64.37-25.33s-.08-18.78-.37-25.33a45.66,45.66,0,0,0-2.86-14.92,30.1,30.1,0,0,0-7.09-10.88,29.77,29.77,0,0,0-10.88-7.08A45.14,45.14,0,0,0,86.76.37C80.2.07,78.12,0,61.43,0ZM55.93,11.07h5.52c16.4,0,18.34.06,24.82.36a34,34,0,0,1,11.41,2.11,19,19,0,0,1,7.06,4.6,19.16,19.16,0,0,1,4.6,7.06,34,34,0,0,1,2.11,11.41c.3,6.47.36,8.42.36,24.82s-.06,18.34-.36,24.82a33.89,33.89,0,0,1-2.11,11.4A20.35,20.35,0,0,1,97.68,109.3a33.64,33.64,0,0,1-11.41,2.12c-6.47.3-8.42.36-24.82.36s-18.35-.06-24.83-.36a34,34,0,0,1-11.41-2.12,19,19,0,0,1-7.07-4.59,19,19,0,0,1-4.59-7.06,34,34,0,0,1-2.12-11.41c-.29-6.48-.35-8.42-.35-24.83s.06-18.34.35-24.82a33.7,33.7,0,0,1,2.12-11.41,19,19,0,0,1,4.59-7.06,19.12,19.12,0,0,1,7.07-4.6A34.22,34.22,0,0,1,36.62,11.4c5.67-.25,7.86-.33,19.31-.34Zm38.31,10.2a7.38,7.38,0,1,0,7.38,7.37,7.37,7.37,0,0,0-7.38-7.37ZM61.45,29.89A31.55,31.55,0,1,0,93,61.44,31.56,31.56,0,0,0,61.45,29.89Zm0,11.07A20.48,20.48,0,1,1,41,61.44,20.48,20.48,0,0,1,61.45,41Z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--4nd cart-->
+        <div class="mx-4 group">
+          <img src="./assets/img/team4.jpg" alt="team4" />
+
+          <div
+            class="relative justify-start overflow-hidden transition-all group"
+          >
+            <span
+              class="h-0 bg-[#006DFE] absolute top-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"
+            ></span>
+            <div class="bg-[#F5F8FF] text-center pt-10 pb-5">
+              <h1 class="text-[#006DFE] text-lg">David Zone</h1>
+              <p class="py-2 text-[#aaa] font-thin text-sm">SEO Expert</p>
+              <ul class="flex justify-center space-x-5 my-4">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    class="w-3 h-3 fill-[#666]"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M380.001 120.001h99.993V0h-99.993c-77.186 0-139.986 62.8-139.986 139.986v60h-80.009V320h79.985v320h120.013V320h99.994l19.996-120.013h-119.99v-60.001c0-10.843 9.154-19.996 19.996-19.996v.012z"
+                    />
+                  </svg>
+                </li>
+
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    class="w-3 h-3 fill-[#666]"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M640.012 121.513c-23.528 10.524-48.875 17.516-75.343 20.634 27.118-16.24 47.858-41.977 57.756-72.615-25.347 14.988-53.516 25.985-83.363 31.866-24-25.5-58.087-41.35-95.848-41.35-72.508 0-131.21 58.736-131.21 131.198 0 10.228 1.134 20.232 3.355 29.882-109.1-5.528-205.821-57.757-270.57-137.222a131.423 131.423 0 0 0-17.764 66c0 45.497 23.102 85.738 58.347 109.207-21.508-.638-41.74-6.638-59.505-16.359v1.642c0 63.627 45.225 116.718 105.32 128.718-11.008 2.988-22.63 4.642-34.606 4.642-8.48 0-16.654-.874-24.78-2.35 16.783 52.11 65.233 90.095 122.612 91.205-44.989 35.245-101.493 56.233-163.09 56.233-10.63 0-20.988-.65-31.334-1.89 58.229 37.359 127.206 58.997 201.31 58.997 241.42 0 373.552-200.069 373.552-373.54 0-5.764-.13-11.35-.366-16.996 25.642-18.343 47.87-41.493 65.469-67.844l.059-.059z"
+                    />
+                  </svg>
+                </li>
+
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="64"
+                    height="64"
+                    class="w-3 h-3 fill-[#666]"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 640 640"
+                  >
+                    <path
+                      d="M185.577 119.517c18.862 0 35.847 1.642 51.331 5.008 15.52 3.236 28.63 8.752 39.757 16.24 10.996 7.512 19.476 17.516 25.748 29.989 6 12.354 9 27.862 9 46.229 0 19.878-4.476 36.355-13.512 49.63-9.118 13.24-22.358 24-40.122 32.516 24.236 6.993 42.118 19.24 54.118 36.627 11.989 17.516 17.753 38.504 17.753 63.225 0 19.996-3.886 37.11-11.469 51.615-7.748 14.634-18.248 26.492-31.11 35.634-12.993 9.236-27.993 15.992-44.753 20.363-16.642 4.346-33.756 6.626-51.45 6.626H0V119.553l185.601.012-.023-.048zm232.042 31.76h159.616v38.883l-159.616-.012v-38.883.012zm35.469 293.448c11.764 11.469 28.63 17.233 50.646 17.233 15.745 0 29.516-4.016 40.867-12.012 11.35-7.996 18.248-16.465 20.882-25.229l68.965.012c-11.126 34.347-27.874 58.749-50.859 73.5-22.642 14.753-50.35 22.241-82.5 22.241-22.524 0-42.627-3.65-60.757-10.772-18.119-7.24-33.237-17.35-45.993-30.638-12.366-13.24-22.11-28.984-28.996-47.493-6.756-18.354-10.229-38.752-10.229-60.744 0-21.367 3.52-41.245 10.477-59.623 7.122-18.52 16.878-34.359 29.87-47.753 12.98-13.382 28.229-24 46.24-31.748 17.883-7.76 37.631-11.646 59.505-11.646 24.107 0 45.225 4.642 63.356 14.126 18 9.355 32.87 21.993 44.492 37.749 11.646 15.768 19.878 33.874 25.004 54.107 5.126 20.232 6.875 41.35 5.469 63.508H433.706c0 22.359 7.512 43.76 19.358 55.1l.024.082zm89.871-149.707c-9.236-10.24-25.122-15.874-44.233-15.874-12.52 0-22.866 2.114-31.11 6.366-8.115 4.229-14.752 9.473-19.878 15.745-4.997 6.248-8.516 13.004-10.465 20.102-1.996 6.874-3.236 13.24-3.65 18.756l127.502-.012c-1.878-19.984-8.752-34.736-18.118-45.106l-.047.023zm-368.662-16.524c15.355 0 28.099-3.65 38.091-11.008 9.992-7.24 14.752-19.24 14.752-35.752 0-9.106-1.63-16.76-4.878-22.642-3.354-5.87-7.76-10.512-13.37-13.748-5.516-3.355-11.74-5.646-19.099-6.886-7.122-1.358-14.634-1.984-22.24-1.984H86.576v91.973h87.745l-.024.047zm4.748 167.59c8.528 0 16.642-.757 24.213-2.528 7.748-1.748 14.634-4.359 20.363-8.35 5.752-3.887 10.641-8.989 14.114-15.745 3.52-6.638 5.126-15.118 5.126-25.477 0-20.232-5.764-34.748-17.114-43.512-11.351-8.646-26.47-12.874-45.214-12.874H86.552V445.93l92.493-.012v.165z"
+                    />
+                  </svg>
+                </li>
+
+                <li>
+                  <svg
+                    id="Layer_1"
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 122.88 122.88"
+                    class="w-3 h-3 fill-[#666]"
+                  >
+                    <title>instagram-logo-black-and-white</title>
+                    <path
+                      d="M61.45,0C44.76,0,42.66.07,36.11.37A45.08,45.08,0,0,0,21.2,3.23a29.86,29.86,0,0,0-10.88,7.08,30.26,30.26,0,0,0-7.1,10.88A44.92,44.92,0,0,0,.37,36.11C.08,42.66,0,44.75,0,61.44S.07,80.21.37,86.77a45.08,45.08,0,0,0,2.86,14.91,30.12,30.12,0,0,0,7.08,10.88,30.13,30.13,0,0,0,10.88,7.1,45.17,45.17,0,0,0,14.92,2.85c6.55.3,8.64.37,25.33.37s18.77-.07,25.33-.37a45.17,45.17,0,0,0,14.92-2.85,31.54,31.54,0,0,0,18-18,45.6,45.6,0,0,0,2.86-14.91c.29-6.55.37-8.64.37-25.33s-.08-18.78-.37-25.33a45.66,45.66,0,0,0-2.86-14.92,30.1,30.1,0,0,0-7.09-10.88,29.77,29.77,0,0,0-10.88-7.08A45.14,45.14,0,0,0,86.76.37C80.2.07,78.12,0,61.43,0ZM55.93,11.07h5.52c16.4,0,18.34.06,24.82.36a34,34,0,0,1,11.41,2.11,19,19,0,0,1,7.06,4.6,19.16,19.16,0,0,1,4.6,7.06,34,34,0,0,1,2.11,11.41c.3,6.47.36,8.42.36,24.82s-.06,18.34-.36,24.82a33.89,33.89,0,0,1-2.11,11.4A20.35,20.35,0,0,1,97.68,109.3a33.64,33.64,0,0,1-11.41,2.12c-6.47.3-8.42.36-24.82.36s-18.35-.06-24.83-.36a34,34,0,0,1-11.41-2.12,19,19,0,0,1-7.07-4.59,19,19,0,0,1-4.59-7.06,34,34,0,0,1-2.12-11.41c-.29-6.48-.35-8.42-.35-24.83s.06-18.34.35-24.82a33.7,33.7,0,0,1,2.12-11.41,19,19,0,0,1,4.59-7.06,19.12,19.12,0,0,1,7.07-4.6A34.22,34.22,0,0,1,36.62,11.4c5.67-.25,7.86-.33,19.31-.34Zm38.31,10.2a7.38,7.38,0,1,0,7.38,7.37,7.37,7.37,0,0,0-7.38-7.37ZM61.45,29.89A31.55,31.55,0,1,0,93,61.44,31.56,31.56,0,0,0,61.45,29.89Zm0,11.07A20.48,20.48,0,1,1,41,61.44,20.48,20.48,0,0,1,61.45,41Z"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end team section-->
+
+    <!--question section-->
+    <section class="bg-[#F5F8FF] mt-24 pb-20">
+      <div class="text-center pt-20">
+        <h1
+          class="text-3xl lg:text-3xl capitalize font-medium lg:text-4xl lg:font-normal text-[#333]"
+        >
+          Frequently asked questions
+        </h1>
+        <div
+          class="w-[12%] lg:w-[4%] m-auto my-4 border-t border-[thin] border-[#006DFE] md:w-[6%]"
+        ></div>
+        <p
+          class="px-4 text-sm text-[#8D96BD] py-4 md:px-32 lg:px-72 lg:text-base"
+        >
+          Business consulting excepteur sint occaecat cupidatat consulting non
+          proident, sunt in culpa qui officia deserunt laborum market.
+        </p>
+      </div>
+
+      <div class="px-8 lg:px-24 lg:pt-20">
+        <div
+          id="accordion-flush"
+          data-accordion="collapse"
+          data-active-classes="dark:bg-gray-900 text-gray-900 dark:text-white"
+          data-inactive-classes="text-gray-500 dark:text-gray-400"
+        >
+          <h2 id="accordion-flush-heading-1">
+            <button
+              type="button"
+              class="flex justify-start items-center py-5 w-full font-medium text-left border-b border-gray-200 dark:border-gray-700 dark:bg-gray-900 text-gray-900 dark:text-white lg:w-[90%]"
+              data-accordion-target="#accordion-flush-body-1"
+              aria-expanded="true"
+              aria-controls="accordion-flush-body-1"
+            >
+            <svg
+                data-accordion-icon=""
+                class="w-6 h-6 rotate-180 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="pl-4 text-[#888] font-light"> Reque insolens in vel?</span>
+              
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-1"
+            class=""
+            aria-labelledby="accordion-flush-heading-1"
+          >
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+              <p class="mb-2 lg:pl-14 lg:pr-44  text-[#8D96BD] text-base font-normal">
+               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+            </div>
+          </div>
+          <h2 id="accordion-flush-heading-2">
+            <button
+              type="button"
+              class="flex justify-start items-center py-5 w-full font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 lg:w-[90%]"
+              data-accordion-target="#accordion-flush-body-2"
+              aria-expanded="false"
+              aria-controls="accordion-flush-body-2"
+            >
+            <svg
+                data-accordion-icon=""
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span class="pl-4 text-[#888] font-light"> Vis rebum error graecis ea, id sit postea accusamus?</span>
+              
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-2"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-2"
+          >
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700 lg:grid lg:grid-cols-3">
+              <p class="mb-2 lg:px-24 text-[#8D96BD] text-base font-normal lg:col-span-2">
+								 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. 
+              </p>
+               <div class="my-6 relative lg:top-[50px] lg:left-[-70px]">
+                 <a href="#" class="bg-[#006DFE] px-8 py-3 text-white rounded text-sm">Go to documentation</a>
+               </div>
+            </div>
+          </div>
+          <h2 id="accordion-flush-heading-3">
+            <button
+              type="button"
+              class="flex justify-start items-center py-5 w-full font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 lg:w-[90%]"
+              data-accordion-target="#accordion-flush-body-3"
+              aria-expanded="false"
+              aria-controls="accordion-flush-body-3">
+              <svg
+              data-accordion-icon=""
+              class="w-6 h-6 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+              <span class="pl-4 text-[#888] font-light">Lorem repudiandae ne nec?</span
+              >
+             
+            </button>
+          </h2>
+          <div
+            id="accordion-flush-body-3"
+            class="hidden"
+            aria-labelledby="accordion-flush-heading-3"
+          >
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+              <p class="mb-2 lg:pl-14 lg:pr-44 text-[#8D96BD] text-base font-normal">
+								 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end question section-->
+
+    <!--blog section-->
+    <section>
+      <div class="text-center pt-20">
+        <h1
+          class="text-3xl lg:text-3xl capitalize font-thin lg:font-normal text-[#333]"
+        >
+          Read Our Blog
+        </h1>
+        <div
+          class="w-[12%] lg:w-[4%] m-auto my-4 border-t border-[thin] border-[#006DFE] md:w-[6%]"
+        ></div>
+        <p
+          class="px-8 text-sm text-[#666] py-4 md:px-32 lg:px-72 lg:text-base lg:text-[#666]"
+        >
+          Business consulting excepteur sint occaecat cupidatat consulting non
+          proident, sunt in culpa qui officia deserunt laborum market.
+        </p>
+      </div>
+
+      <div class="mt-10 md:grid md:grid-cols-2 lg:grid-cols-3 lg:mx-20">
+        <div class="mx-4">
+          <img src="./assets/img/blog1.jpg" alt="blog-1" class="md:w-[100%]" />
+          <div
+            class="bg-white shadow-xl overflow-hidden w-[90%] md:w-[90%] relative -top-[20px] left-[18px] pb-8"
+          >
+            <h2 class="pt-8 pl-8 text-sm text-[#666]">22 Aug, 2020</h2>
+            <h1 class="py-4 px-8 text-[#2C2D3F] font-medium">
+              We have annnocuced our new product.
+            </h1>
+            <p class="text-[#666] px-8">
+              Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed
+              do eiusmod tempor incididunt sed do incididunt sed.
+            </p>
+          </div>
+        </div>
+        <!---1nd blog-->
+        <div class="mx-4">
+          <img src="./assets/img/blog2.jpg" alt="blog-2" class="md:w-[100%]" />
+          <div
+            class="bg-white shadow-xl overflow-hidden w-[90%] md:w-[90%] relative -top-[20px] left-[18px] pb-8"
+          >
+            <h2 class="pt-8 pl-8 text-sm text-[#666]">15 Jul, 2020</h2>
+            <h1 class="py-4 px-8 text-[#2C2D3F] font-medium">
+              Top five way for learning web development.
+            </h1>
+            <p class="text-[#666] px-8">
+              Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed
+              do eiusmod tempor incididunt sed do incididunt sed.
+            </p>
+          </div>
+        </div>
+        <!---2nd blog-->
+        <div class="mx-4">
+          <img src="./assets/img/blog3.jpg" alt="blog-3" class="md:w-[100%]" />
+          <div
+            class="bg-white shadow-xl overflow-hidden w-[90%] md:w-[90%] relative -top-[20px] left-[18px] pb-8"
+          >
+            <h2 class="pt-8 pl-8 text-sm text-[#666]">05 Jan, 2020</h2>
+            <h1 class="py-4 px-8 text-[#2C2D3F] font-medium">
+              We provide highly business soliutions.
+            </h1>
+            <p class="text-[#666] px-8">
+              Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed
+              do eiusmod tempor incididunt sed do incididunt sed.
+            </p>
+          </div>
+        </div>
+        <!--3nd blog-->
+      </div>
+    </section>
+    <!--end blog section-->
+
+    <!--contact section-->
+    <section class="bg-[#F5F8FF] mt-10 pb-[100px]">
+      <div class="text-center pt-20">
+        <h1
+          class="text-3xl font-medium lg:text-3xl capitalize font-thin lg:font-normal text-[#333]"
+        >
+          Contact Us
+        </h1>
+        <div
+          class="w-[12%] lg:w-[4%] m-auto my-4 border-t border-[thin] border-[#006DFE] md:w-[6%]"
+        ></div>
+        <p
+          class="px-8 text-sm text-[#666] py-4 md:px-32 lg:px-72 lg:text-base lg:text-[#666]"
+        >
+          Business consulting excepteur sint occaecat cupidatat consulting non
+          proident, sunt in culpa qui officia deserunt laborum market.
+        </p>
+      </div>
+      <!--contact us-->
+      <div class="mt-10 lg:grid lg:grid-cols-2 lg:mx-28">
+        <div
+          class="bg-gradient-to-tr from-red-600 to-blue-500 opacity-70 relative h-screen md:h-[620px] w-[92%] md:w-[96%] lg:w-[80%] lg:h-[100%] rounded-t-lg mx-4"
+        >
+          <img
+            src="./assets/img/contact-bg.jpg"
+            alt="contact"
+            class="h-[100%] w-[100%] rounded-t-lg absolute object-cover mix-blend-overlay"
+          />
+
+          <div>
+            <div
+              class="absolute top-[50px] left-[35px] bg-white p-2.5 rounded-sm"
+            >
+              <svg
+                version="1.1"
+                class="fill-blue-600 h-4 w-4"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 122.88 122.27"
+                style="enable-background: new 0 0 122.88 122.27"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M33.84,50.25c4.13,7.45,8.89,14.6,15.07,21.12c6.2,6.56,13.91,12.53,23.89,17.63c0.74,0.36,1.44,0.36,2.07,0.11 c0.95-0.36,1.92-1.15,2.87-2.1c0.74-0.74,1.66-1.92,2.62-3.21c3.84-5.05,8.59-11.32,15.3-8.18c0.15,0.07,0.26,0.15,0.41,0.21 l22.38,12.87c0.07,0.04,0.15,0.11,0.21,0.15c2.95,2.03,4.17,5.16,4.2,8.71c0,3.61-1.33,7.67-3.28,11.1 c-2.58,4.53-6.38,7.53-10.76,9.51c-4.17,1.92-8.81,2.95-13.27,3.61c-7,1.03-13.56,0.37-20.27-1.69 c-6.56-2.03-13.17-5.38-20.39-9.84l-0.53-0.34c-3.31-2.07-6.89-4.28-10.4-6.89C31.12,93.32,18.03,79.31,9.5,63.89 C2.35,50.95-1.55,36.98,0.58,23.67c1.18-7.3,4.31-13.94,9.77-18.32c4.76-3.84,11.17-5.94,19.47-5.2c0.95,0.07,1.8,0.62,2.25,1.44 l14.35,24.26c2.1,2.72,2.36,5.42,1.21,8.12c-0.95,2.21-2.87,4.25-5.49,6.15c-0.77,0.66-1.69,1.33-2.66,2.03 c-3.21,2.33-6.86,5.02-5.61,8.18L33.84,50.25L33.84,50.25L33.84,50.25z"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="absolute top-[100px] left-[36px]">
+              <h1 class="text-white text-lg capitalize font-normal">
+                call us now:
+              </h1>
+              <p class="text-white text-sm pt-4 font-thin">+123 456-789-1120</p>
+              <p class="text-white text-sm pt-1 font-thin">+522 672-452-1120</p>
+            </div>
+          </div>
+          <div>
+            <div
+              class="absolute top-[230px] left-[35px] bg-white p-2.5 rounded-sm"
+            >
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-blue-600 h-4 w-4"
+                viewBox="0 0 113.17 122.88"
+              >
+                <title>mail-symbol</title>
+                <path
+                  d="M3.49,44.07,57.54,0l51.73,44.07Zm47.68,15a3,3,0,0,1,0-6.08h8.41a3,3,0,0,1,0,6.08Zm24,0a3,3,0,0,1,0-6.08H87.24a3,3,0,0,1,0,6.08Zm-49.6,0a3,3,0,0,1,0-6.08H37.64a3,3,0,0,1,0,6.08ZM49.2,74.52a3,3,0,1,1,0-6.08H63.57a3,3,0,0,1,0,6.08ZM0,118.23l38.5-38.6L0,48.24v70ZM42.74,83.09,3.05,122.88H109.79L71.86,83.09,59.35,93.75h0a2.72,2.72,0,0,1-3.48,0L42.74,83.09ZM76,79.56l37.16,39V47.9L76,79.56Z"
+                />
+              </svg>
+            </div>
+            <div class="absolute top-[280px] left-[36px]">
+              <h1 class="text-white text-lg capitalize font-normal">Email:</h1>
+              <p class="text-white text-sm pt-2 font-thin">
+                info@yourwebsite.com
+              </p>
+              <p class="text-white text-sm pt-1 font-thin">
+                support@yourwebsite.com
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div
+              class="absolute top-[400px] left-[35px] bg-white p-2.5 rounded-sm"
+            >
+              <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 fill-blue-600"
+                viewBox="0 0 122.56 122.88"
+              >
+                <title>sent</title>
+                <path
+                  d="M112.27,10.31l-99,38.07,30,14.37L89.21,33.18,60.44,80.53l14,29.06,37.81-99.28ZM2.42,44.49,117.16.37a3.73,3.73,0,0,1,3-.12,3.78,3.78,0,0,1,2.19,4.87L78.4,120.45a3.78,3.78,0,0,1-6.92.3l-22.67-47L2.14,51.39a3.76,3.76,0,0,1,.28-6.9Z"
+                />
+              </svg>
+            </div>
+            <div class="absolute top-[460px] left-[36px]">
+              <h1 class="text-white text-lg capitalize font-normal">
+                Our Address:
+              </h1>
+              <p class="text-white text-base pt-2 font-normal">
+                KA-62/1, Travel Agency, 45 Grand Central Terminal,
+              </p>
+              <p class="text-white text-base pt-1 font-normal">New York.</p>
+            </div>
+          </div>
+        </div>
+        <!--contact form-->
+        <div class="lg:-ml-28">
+          <div
+            class="bg-white rounded-md overflow-hidden shadow-white-900 mx-4 pt-8 pb-[40px]"
+          >
+            <h1
+              class="text-[#006DFE] text-2xl pl-10 font-light lg:pl-20 lg:text-base lg:font-semibold"
+            >
+              Get in touch
+            </h1>
+            <p class="text-[#444] text-2xl pl-10 py-2 font-semibold lg:pl-20">
+              Write us a message
+            </p>
+
+            <div class="lg:grid lg:grid-cols-2">
+              <div class="pt-8">
+                <label
+                  class="pl-12 pt-8 text-[#333] text-xl font-thin lg:pl-20 lg:text-sm"
+                  >Your Name <span class="ml-2 text-red-500">*</span></label
+                >
+                <input
+                  type="text"
+                  name="Your Name"
+                  id="Your Name"
+                  class="ml-12 lg:ml-20 mt-3 shadow appearance-none border rounded w-[75%] md:w-[88%] lg:w-[72%] py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                />
+              </div>
+
+              <div class="pt-8">
+                <label
+                  class="pl-12 pt-8 text-[#333] text-xl font-thin lg:text-sm"
+                  >Your Subjects <span class="ml-2 text-red-500">*</span></label
+                >
+                <input
+                  type="text"
+                  name="Your Name"
+                  id="Your Name"
+                  class="ml-12 mt-3 shadow appearance-none border rounded w-[75%] md:w-[88%] lg:w-[72%] py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                />
+              </div>
+            </div>
+
+            <div class="lg:grid lg:grid-cols-2">
+              <div class="pt-8">
+                <label
+                  class="pl-12 pt-8 text-[#333] text-xl font-thin lg:pl-20 lg:text-sm"
+                  >Your Email <span class="ml-2 text-red-500">*</span></label
+                >
+                <input
+                  type="text"
+                  name="Your Name"
+                  id="Your Name"
+                  class="ml-12 lg:ml-20 mt-3 shadow appearance-none border rounded w-[75%] md:w-[88%] lg:w-[72%] py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                />
+              </div>
+
+              <div class="pt-8">
+                <label
+                  class="pl-12 pt-8 text-[#333] text-xl font-thin lg:text-sm"
+                  >Your Phone <span class="ml-2 text-red-500">*</span></label
+                >
+                <input
+                  type="text"
+                  name="Your Name"
+                  id="Your Name"
+                  class="ml-12 mt-3 shadow appearance-none border rounded w-[75%] md:w-[88%] lg:w-[72%] py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                />
+              </div>
+            </div>
+            <div class="pt-8">
+              <label
+                class="pl-12 pt-8 text-[#333] text-xl font-thin lg:pl-20 lg:text-sm"
+                >your message<span class="ml-2 text-red-500">*</span></label
+              >
+              <input
+                type="text"
+                name="Your Name"
+                id="Your Name"
+                class="ml-12 lg:ml-20 mt-1.5 shadow appearance-none border rounded w-[75%] md:w-[88%] lg:w-[81%] py-20 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="md:mx-14 mx-20 mt-12 lg:ml-20">
+              <button
+                class="capitalize bg-blue-600 px-6 py-3 text-white rounded-sm text-sm font-normal hover:bg-blue-800"
+              >
+                send message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end contact section-->
+    <!--plan section-->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 pb-10">
+      <div class="pt-14 text-center">
+        <h4 class="text-white font-thin py-4 lg:font-medium md:font-medium">
+          Plan your life
+        </h4>
+        <h1 class="text-white text-3xl lg:text-4xl md:text-4xl">
+          Get <b class="font-medium">started</b> now
+        </h1>
+        <p class="text-white py-6 px-6 lg:px-72 md:px-24">
+          Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu
+          atqui laudem an, insolens gubergren similique est cu. Et vel modus
+          congue vituperata.
+        </p>
+        <div class="my-6">
+          <a
+            href="#"
+            class="text-[#006DFE] bg-white py-3 rounded px-6 capitalize"
+            >view pricing</a
+          >
+        </div>
+      </div>
+    </section>
+    <!--end plan section-->
+    <!--tailwind element script-->
+
+    <!--sign section-->
+    <section>
+      <div class="pt-14 lg:grid lg:grid-cols-2 lg:pt-20">
+        <div class="text-center lg:text-left lg:px-24">
+          <h1 class="text-[#444] text-xl font-medium">
+            Sign up for newsletter
+          </h1>
+          <p class="px-8 text-[#666] py-6 lg:px-0 lg:pr-[23px]">
+            Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu,homero
+            alterum.
+          </p>
+        </div>
+        <div class="md:text-center lg:mr-24">
+          <input
+            type="text"
+            name="Your Name"
+            id="Your Name"
+            placeholder="Youe email address"
+            class="mx-4 border bg-[#EFEFF7] rounded w-[90%] lg:w-[60%] md:w-[40%] my-6 py-3 lg:py-4 md:py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          />
+          <button
+            class="mx-4 bg-[#006DFE] text-white px-6 py-2 md:py-4 lg:py-4 w-[90%] md:w-[25%] lg:w-[26%] rounded lg:mx-0"
+          >
+            Save Me
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--end sign section-->
+
+    <!--footer section-->
+    <footer class="bg-[#F5F8FF] mt-20">
+      <div class="md:pt-14 lg:px-24 md:grid md:grid-cols-4">
+        <div class="pt-10 md:pt-3 lg:mt-3">
+          <img
+            src="./assets/img/logo (1).png"
+            alt="logo"
+            class="ml-5 cursor-pointer"
+          />
+          <p class="text-sm px-4 py-2 text-[#666] lg:text-base lg:font-light">
+            Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu, homero
+            alterum.
+          </p>
+        </div>
+        <div>
+          <h1 class="text-[#444] font-semibold text-lg py-4 px-4">
+            Quick menu
+          </h1>
+          <u
+            class="text-[#666] list-none no-underline space-y-3 lg:text-sm lg:font-normal"
+          >
+            <li
+              class="px-4 hover:text-blue-500 hover:ml-2 duration-500 cursor-pointer"
+            >
+              Home
+            </li>
+            <li
+              class="px-4 hover:text-blue-500 hover:ml-2 duration-500 cursor-pointer"
+            >
+              About Us
+            </li>
+            <li
+              class="px-4 hover:text-blue-500 hover:ml-2 duration-500 cursor-pointer"
+            >
+              Pricing
+            </li>
+            <li
+              class="px-4 hover:text-blue-500 hover:ml-2 duration-500 cursor-pointer"
+            >
+              Services
+            </li>
+          </u>
+        </div>
+        <div class="pt-4 md:pt-0">
+          <h1 class="text-[#444] font-semibold text-lg py-4 px-4">
+            Featured links
+          </h1>
+          <u
+            class="text-[#666] list-none no-underline space-y-3 lg:text-sm lg:font-normal"
+          >
+            <li
+              class="px-4 hover:text-blue-500 hover:ml-2 duration-500 cursor-pointer"
+            >
+              Documentation
+            </li>
+            <li
+              class="px-4 hover:text-blue-500 hover:ml-2 duration-500 cursor-pointer"
+            >
+              Get Started
+            </li>
+            <li
+              class="px-4 hover:text-blue-500 hover:ml-2 duration-500 cursor-pointer"
+            >
+              Blog
+            </li>
+          </u>
+        </div>
+        <div>
+          <h1 class="text-[#444] font-semibold py-4 px-4 text-lg">
+            Keep in touch
+          </h1>
+          <p class="text-[#666] text-sm px-4 lg:text-base lg:font-light">
+            Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu.
+          </p>
+          <p class="text-[#666] text-sm px-4 py-2">+1-541-754-3010</p>
+          <p class="text-[#3D4F9F] text-base px-4 font-semibold">
+            contact@Applay.com
+          </p>
+          <div>
+            <ul class="flex px-4 py-4 space-x-4 lg:space-x-5">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  class="lg:w-3.5 lg:h-3.5 w-4 h-4 fill-[#8D96BD] cursor-pointer hover:fill-[#006DFE]"
+                  shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision"
+                  image-rendering="optimizeQuality"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  viewBox="0 0 640 640"
+                >
+                  <path
+                    d="M380.001 120.001h99.993V0h-99.993c-77.186 0-139.986 62.8-139.986 139.986v60h-80.009V320h79.985v320h120.013V320h99.994l19.996-120.013h-119.99v-60.001c0-10.843 9.154-19.996 19.996-19.996v.012z"
+                  />
+                </svg>
+              </li>
+
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  class="lg:w-3.5 lg:h-3.5 w-4 h-4 fill-[#8D96BD] cursor-pointer hover:fill-[#006DFE]"
+                  shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision"
+                  image-rendering="optimizeQuality"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  viewBox="0 0 640 640"
+                >
+                  <path
+                    d="M319.965.024C143.246.024 0 143.282 0 320c0 135.628 84.39 251.33 203.412 297.913-2.728-25.24-5.362-64.206 1.146-91.773 5.775-24.969 37.536-158.99 37.536-158.99s-9.508-19.217-9.508-47.47c0-44.456 25.807-77.74 57.839-77.74 27.284 0 40.536 20.492 40.536 45.012 0 27.426-17.457 68.505-26.54 106.454-7.665 31.89 15.874 57.84 47.316 57.84 56.835 0 100.56-60.025 100.56-146.589 0-76.571-55.123-130.147-133.608-130.147-91.04 0-144.403 68.245-144.403 138.911 0 27.568 10.523 56.966 23.823 72.993 2.575 3.19 3.047 5.906 2.161 9.225-2.445 10.098-7.807 31.902-8.953 36.331-1.429 5.917-4.618 7.063-10.665 4.347-39.97-18.603-64.903-77.057-64.903-123.911 0-101.01 73.265-193.62 211.35-193.62 110.941 0 197.222 79.04 197.222 184.798 0 110.234-69.532 199.1-166.053 199.1-32.457 0-62.882-16.89-73.323-36.791 0 0-16.016 61.028-19.89 76.04-7.205 27.827-26.682 62.6-39.804 83.836 30.012 9.236 61.713 14.268 94.785 14.268C496.755 640.037 640 496.79 640 320.072 640 143.212 496.755-.034 320.036-.034l-.071.059z"
+                  />
+                </svg>
+              </li>
+
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  class="lg:w-3.5 lg:h-3.5 w-4 h-4 fill-[#8D96BD] cursor-pointer hover:fill-[#006DFE]"
+                  shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision"
+                  image-rendering="optimizeQuality"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  viewBox="0 0 640 640"
+                >
+                  <path
+                    d="M579.999 0H60C27 0 0 27 0 60v520c0 33 27 60 60 60h519.999c33 0 60-27 60-60V60c0-33-27-60-60-60zM239.991 519.999h-79.985V239.992h79.985v280.007zm-40.004-320.012c-22.11 0-39.993-17.882-39.993-39.993 0-22.122 17.882-40.004 39.993-40.004 22.122 0 40.004 17.882 40.004 40.004 0 22.11-17.882 39.993-40.004 39.993zm320.012 320.012h-79.986V360.005c0-22.122-17.893-40.004-40.004-40.004-22.122 0-40.004 17.882-40.004 40.004v159.994h-80.01V239.992h80.01v49.642c16.476-22.654 41.752-49.642 69.993-49.642 49.76 0 90 44.764 90 100.005v180.002z"
+                  />
+                </svg>
+              </li>
+
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  class="lg:w-3.5 lg:h-3.5 w-4 h-4 fill-[#8D96BD] cursor-pointer hover:fill-[#006DFE]"
+                  shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision"
+                  image-rendering="optimizeQuality"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  viewBox="0 0 640 640"
+                >
+                  <path
+                    d="M640.012 121.513c-23.528 10.524-48.875 17.516-75.343 20.634 27.118-16.24 47.858-41.977 57.756-72.615-25.347 14.988-53.516 25.985-83.363 31.866-24-25.5-58.087-41.35-95.848-41.35-72.508 0-131.21 58.736-131.21 131.198 0 10.228 1.134 20.232 3.355 29.882-109.1-5.528-205.821-57.757-270.57-137.222a131.423 131.423 0 0 0-17.764 66c0 45.497 23.102 85.738 58.347 109.207-21.508-.638-41.74-6.638-59.505-16.359v1.642c0 63.627 45.225 116.718 105.32 128.718-11.008 2.988-22.63 4.642-34.606 4.642-8.48 0-16.654-.874-24.78-2.35 16.783 52.11 65.233 90.095 122.612 91.205-44.989 35.245-101.493 56.233-163.09 56.233-10.63 0-20.988-.65-31.334-1.89 58.229 37.359 127.206 58.997 201.31 58.997 241.42 0 373.552-200.069 373.552-373.54 0-5.764-.13-11.35-.366-16.996 25.642-18.343 47.87-41.493 65.469-67.844l.059-.059z"
+                  />
+                </svg>
+              </li>
+
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="64"
+                  height="64"
+                  class="lg:w-3.5 lg:h-3.5 w-4 h-4 fill-[#8D96BD] cursor-pointer hover:fill-[#006DFE]"
+                  shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision"
+                  image-rendering="optimizeQuality"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  viewBox="0 0 640 640"
+                >
+                  <path
+                    d="M639.764 171.144c-2.894 62.257-46.383 147.675-130.537 255.901-87.025 113.021-160.667 169.679-220.916 169.679-37.229 0-68.87-34.37-94.643-103.265-17.232-63.13-34.37-126.261-51.65-189.368-19.122-68.894-39.65-103.265-61.643-103.265-4.771 0-21.52 10.122-50.244 30.119L0 192.18a7751.179 7751.179 0 0 0 93.378-83.257c42.12-36.366 73.773-55.489 94.891-57.532 49.76-4.76 80.54 29.245 91.998 102.143 12.366 78.65 21 127.537 25.89 146.671 14.362 65.233 30.118 97.88 47.374 97.88 13.359 0 33.52-21.13 60.379-63.545 26.752-42.236 41.127-74.481 43.123-96.639 3.885-36.484-10.489-54.886-43.123-54.886-15.366 0-31.122 3.52-47.375 10.524 31.477-103.017 91.49-153.014 180.262-150.144 65.659 1.748 96.651 44.362 92.907 127.785l.06-.036z"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="mx-4 lg:w-[394%] my-4" />
+      </div>
+      <div class="text-center py-6">
+        <h1 class="text-[#666] text-sm">2020 Your Copyright Content</h1>
+      </div>
+    </footer>
+    <!--end footer section-->
+
+    <!---sticky page up section-->
+    <button
+      type="button"
+      data-mdb-ripple="true"
+      data-mdb-ripple-color="light"
+      class="inline-block px-3 py-3 bg-[#006DFE] text-white font-medium text-xs leading-tight uppercase fixed rounded-sm shadow-md hover:bg-white hover:text-blue-500 hover:shadow-lg transition duration-500 ease-in-out bottom-5 z-2 right-2 display-none float-right"
+      id="btn-back-to-top"
+    >
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fas"
+        class="w-4 h-3"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+      >
+        <path
+          fill="currentColor"
+          d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"
+        ></path>
+      </svg>
+    </button>
+    <!---end sticky page up section-->
+
+    <!--index.js import-->
+    <script src="./index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <!--slick script link-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      $(".slider").slick({
+        dots: false,
+        prevArrow: false,
+        nextArrow: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 5,
+              infinite: true,
+              dots: false,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    </script>
+
+    <!--cards carousel-->
+    <script>
+      $(".cards").slick({
+        dots: false,
+        prevArrow: false,
+        nextArrow: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    </script>
+    <!--tailwind css flowbite script-->
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+
+    <!--sticky navbar-->
+  
+  </body>
+</html>
